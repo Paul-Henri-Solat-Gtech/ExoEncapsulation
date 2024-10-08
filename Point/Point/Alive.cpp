@@ -1,8 +1,8 @@
 #include "Alive.h"
 
-Alive::Alive(float lifeMax):maxHp(lifeMax)
+Alive::Alive(float lifeMax):maxHp(lifeMax), hp(lifeMax)
 {
-	hp = maxHp;
+
 }
 
 float Alive::GetMaxHp() 
