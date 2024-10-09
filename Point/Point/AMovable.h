@@ -15,9 +15,10 @@ public:
 
 protected:
 	Vector2 direction;
+	float speed;
 
 private:
-	float speed;
+	
 };
 
 
