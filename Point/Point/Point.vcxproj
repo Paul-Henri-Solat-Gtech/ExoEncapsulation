@@ -24,6 +24,7 @@
     <ClCompile Include="BreakableObject.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="IAttacker.h" />
+    <ClCompile Include="Integer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mob.cpp" />
     <ClCompile Include="Mob.h" />
@@ -37,6 +38,7 @@
     <ClInclude Include="BreakableObject.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="IAlive.h" />
+    <ClInclude Include="Integer.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="StaticObjet.h" />
     <ClInclude Include="Vector2.h" />

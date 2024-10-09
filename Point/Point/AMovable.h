@@ -9,8 +9,8 @@ public:
 	AMovable(Vector2 dir, float spe);
 	AMovable(Vector2 dir);
 
-	virtual void SetDirection();
-	virtual void SetSpeed();
+	virtual void SetDirection(Vector2 dir);
+	virtual void SetSpeed(float spe);
 	virtual void Move() = 0;
 
 protected:

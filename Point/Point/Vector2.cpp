@@ -24,3 +24,22 @@ float Vector2::GetPositionY() {
 void Vector2::SetPositionY(float y) {
 	posY = y;
 }
+
+Vector2 Vector2::operator+(const Vector2& position) 
+{
+	posX += position.posX;
+	posY += position.posY;
+	return Vector2(posX, posY);
+}
+Vector2 Vector2::operator-(const Vector2& position)
+{
+	posX -= position.posX;
+	posY -= position.posY;
+	return Vector2(posX, posY);
+}
+Vector2 Vector2::operator*(const Vector2& position)
+{
+	posX *= position.posX;
+	posY *= position.posY;
+	return Vector2(posX, posY);
+}

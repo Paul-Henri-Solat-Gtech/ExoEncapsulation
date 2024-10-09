@@ -13,13 +13,11 @@ void Player::TakeDamage(float dmg)
 
 void Player::Move() 
 {
-	AMovable::Move();
 	std::cout << "Player moved to x = " << direction.GetPositionX() << " and y = " << direction.GetPositionY() << std::endl;
 }
 
 void Player::Attack(Alive* alive) 
 {
-	IAttacker::Attack(alive);
-	alive->TakeDamage(10.f);
 	std::cout << "Player just attacked" << std::endl;
+	alive->TakeDamage(10.f);
 }

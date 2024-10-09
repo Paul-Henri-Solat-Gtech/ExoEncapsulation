@@ -16,7 +16,9 @@ public:
 
 private:
 	float posX, posY;
-	Vector2 operator + (const Vector2& right);
+	Vector2 operator + (const Vector2& position);
+	Vector2 operator - (const Vector2& position);
+	Vector2 operator * (const Vector2& position);
 };
 
 #endif

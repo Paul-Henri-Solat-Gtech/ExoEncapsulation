@@ -9,11 +9,10 @@ Mob::Mob(Vector2 position, float hp, Vector2 direction, float speed) : Entity(po
 void Mob::TakeDamage(float dmg) 
 {
 	Alive::TakeDamage(dmg);
-	std::cout << "Mob just die" << std::endl;
+	std::cout << "Mob just died" << std::endl;
 }
 
 void Mob::Move() 
 {
-	AMovable::Move();
-	std::cout << "Mob move to x = "<< direction.GetPositionX() << " y = " << direction.GetPositionY() << std::endl;
+	std::cout << "Mob moved to x = "<< direction.GetPositionX() << " y = " << direction.GetPositionY() << std::endl;
 }

@@ -8,8 +8,6 @@ protected:
     
 public:
     Entity(Vector2 position);
-    virtual void sayHello() = 0;
-
     virtual Vector2 GetPosition();
     virtual void SetPosition(float x, float y);
 
