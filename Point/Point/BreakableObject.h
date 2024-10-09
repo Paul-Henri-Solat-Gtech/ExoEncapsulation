@@ -7,7 +7,7 @@
 class BreakableObject: public Entity, public Alive
 {
 public:
-	BreakableObject(float x, float y, float hp);
+	BreakableObject(Vector2 position, float hp);
 	void TakeDamage(float dmg) override;
 
 private:

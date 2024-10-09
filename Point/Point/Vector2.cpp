@@ -4,6 +4,11 @@ Vector2::Vector2(float x, float y):posX(x),posY(y) {
 
 }
 
+Vector2::Vector2(): posX(0), posY(0)
+{
+
+}
+
 float Vector2::GetPositionX() {
 	return posX;
 }

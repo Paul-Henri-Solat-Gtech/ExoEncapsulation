@@ -6,7 +6,7 @@
 class StaticObjet:public Entity
 {
 public:
-	StaticObjet(float x, float y);
+	StaticObjet(Vector2 position);
 
 private:
 

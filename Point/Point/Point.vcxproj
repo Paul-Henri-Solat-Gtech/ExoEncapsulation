@@ -25,6 +25,8 @@
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="IAttacker.h" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mob.cpp" />
+    <ClCompile Include="Mob.h" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="StaticObjet.cpp" />
     <ClCompile Include="Vector2.cpp" />

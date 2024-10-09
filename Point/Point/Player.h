@@ -1,25 +1,21 @@
-//
-//  Player.h
-//  point
-//
-//  Created by Maxine Constantinian on 08/10/2024.
-//
-
-#ifndef PLAYER_H__
-#define PLAYER_H__
+#ifndef player_h
+#define player_h
 
 #include "Entity.h"
-#include "IAlive.h"
+#include "Alive.h"
+#include "AMovable.h"
+#include "IAttacker.h"
 
-class Player : public Entity, public IAlive {
-    int life;
-
+class Player: public Entity, public Alive, public AMovable, public IAttacker
+{
 public:
-    Player();
-    void sayHello() override;
-    
-    bool IsAlive() override;
-    void TakeDamage(int _dmg) override;
+	Player(Vector2 position, float hp, Vector2 direction);
+	void TakeDamage(float dmg) override;
+	void Move() override;
+	void Attack(Alive* alive) override;
+private:
+
 };
+
 
 #endif

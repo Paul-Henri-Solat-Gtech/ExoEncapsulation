@@ -7,6 +7,7 @@ class Vector2
 {
 public:
 	Vector2(float x, float y);
+	Vector2();
 
 	virtual float GetPositionX();
 	virtual void SetPositionX(float x);
@@ -15,6 +16,7 @@ public:
 
 private:
 	float posX, posY;
+	Vector2 operator + (const Vector2& right);
 };
 
 #endif

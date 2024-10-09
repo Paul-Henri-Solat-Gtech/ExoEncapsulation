@@ -1,6 +1,6 @@
 #include "StaticObjet.h"
 
-StaticObjet::StaticObjet(float x, float y): Entity(Vector2(x,y))
+StaticObjet::StaticObjet(Vector2 position): Entity(position)
 {
-	std::cout << "Static Object just created at x = " << GetPosition().GetPositionX() << " and y = " << GetPosition().GetPositionY() << std::endl;
+	std::cout << "Static Object just created at x = " << position.GetPositionX() << " and y = " << position.GetPositionY() << std::endl;
 }

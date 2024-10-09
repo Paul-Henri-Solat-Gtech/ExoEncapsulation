@@ -8,7 +8,7 @@
 class Mob: public Entity, public Alive, public AMovable
 {
 public:
-	Mob(float x, float y, float hp, Vector2 direction, float speed);
+	Mob(Vector2 position, float hp, Vector2 direction, float speed);
 
 	void TakeDamage(float dmg) override;
 	void Move() override;

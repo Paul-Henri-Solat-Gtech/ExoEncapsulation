@@ -7,13 +7,16 @@ class AMovable
 {
 public:
 	AMovable(Vector2 dir, float spe);
+	AMovable(Vector2 dir);
 
 	virtual void SetDirection();
 	virtual void SetSpeed();
 	virtual void Move() = 0;
 
-private:
+protected:
 	Vector2 direction;
+
+private:
 	float speed;
 };
 

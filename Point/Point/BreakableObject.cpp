@@ -1,8 +1,8 @@
 #include "BreakableObject.h"
 
-BreakableObject::BreakableObject(float x, float y, float hp):Entity(Vector2(x,y)),Alive(hp)
+BreakableObject::BreakableObject(Vector2 position, float hp):Entity(position),Alive(hp)
 {
-	std::cout << "Breakable Object just created at x = " << GetPosition().GetPositionX() << "and y = "<< GetPosition().GetPositionY() <<"with "<< GetHp() << std::endl;
+	std::cout << "Breakable Object just created at x = " << position.GetPositionX() << "and y = "<< position.GetPositionY() <<"with "<< GetHp() << std::endl;
 }
 
 void BreakableObject::TakeDamage(float dmg) 
