@@ -43,3 +43,14 @@ Vector2 Vector2::operator*(const Vector2& position)
 	posY *= position.posY;
 	return Vector2(posX, posY);
 }
+bool Vector2::operator!=(const Vector2& position) 
+{
+	if (posX != position.posX || posY != position.posY) 
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}

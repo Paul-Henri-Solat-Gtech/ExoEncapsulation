@@ -31,6 +31,7 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="StaticObjet.cpp" />
     <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Alive.h" />
@@ -42,6 +43,7 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="StaticObjet.h" />
     <ClInclude Include="Vector2.h" />
+    <ClInclude Include="World.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

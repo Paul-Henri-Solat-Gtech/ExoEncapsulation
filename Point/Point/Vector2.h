@@ -14,11 +14,14 @@ public:
 	virtual float GetPositionY();
 	virtual void SetPositionY(float y);
 
-private:
-	float posX, posY;
 	Vector2 operator + (const Vector2& position);
 	Vector2 operator - (const Vector2& position);
 	Vector2 operator * (const Vector2& position);
+	bool operator != (const Vector2& position);
+
+private:
+	float posX, posY;
+
 };
 
 #endif
