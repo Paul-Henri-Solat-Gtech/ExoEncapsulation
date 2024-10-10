@@ -18,6 +18,7 @@ public:
 	Vector2 operator - (const Vector2& position);
 	Vector2 operator * (const Vector2& position);
 	bool operator != (const Vector2& position);
+	bool operator == (const Vector2& position);
 
 private:
 	float posX, posY;

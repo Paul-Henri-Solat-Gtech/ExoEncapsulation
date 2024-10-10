@@ -11,7 +11,7 @@ public:
 	Mob(Vector2 position, float hp, Vector2 direction, float speed);
 
 	void TakeDamage(float dmg) override;
-	void Move() override;
+	void Move(Vector2 directionTo) override;
 private:
 
 };

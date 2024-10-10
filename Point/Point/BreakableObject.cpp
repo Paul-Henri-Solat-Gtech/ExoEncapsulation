@@ -8,5 +8,5 @@ BreakableObject::BreakableObject(Vector2 position, float hp):Entity(position),Al
 void BreakableObject::TakeDamage(float dmg) 
 {
 	Alive::TakeDamage(dmg);
-	std::cout << "Breakable Object just broke" << std::endl;
+	std::cout << "Breakable Object just got hit !" << std::endl;
 }

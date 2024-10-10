@@ -18,8 +18,7 @@ public:
 
 	std::vector<Entity*> entity_list;
 
-private:
-
+	bool finishedSimulation;
 };
 
 

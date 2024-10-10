@@ -54,3 +54,14 @@ bool Vector2::operator!=(const Vector2& position)
 		return false;
 	}
 }
+bool Vector2::operator==(const Vector2& position)
+{
+	if (posX == position.posX && posY == position.posY)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}

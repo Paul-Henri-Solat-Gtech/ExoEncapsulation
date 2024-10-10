@@ -9,9 +9,10 @@
 class Player: public Entity, public Alive, public AMovable, public IAttacker
 {
 public:
-	Player(Vector2 position, float hp, Vector2 direction, float speed);
+	Player(Vector2 position, float hp, Vector2 direction, float spe);
+	Player();
 	void TakeDamage(float dmg) override;
-	void Move() override;
+	void Move(Vector2 directionTo) override;
 	void Attack(Alive* alive) override;
 private:
 	float speed;
