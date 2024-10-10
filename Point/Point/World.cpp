@@ -3,7 +3,7 @@
 
 World::World():finishedSimulation(false)
 {
-	Init();
+
 }
 
 void World::Init() 

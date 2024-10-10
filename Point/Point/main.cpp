@@ -11,6 +11,7 @@ int main(int argc, const char * argv[])
     //std::cout << a.nb;
 
     World newWorld;
+    newWorld.Init();
 
     while (newWorld.finishedSimulation != true)
     {
